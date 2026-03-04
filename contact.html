@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Henrie Mbogo - Senior Driver</title>
+    
+    <link rel="stylesheet" href="css/master-style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+</head>
+<body>
+    <div class="animated-bg">
+        <div class="gradient-orbs">
+            <div class="orb orb1"></div>
+            <div class="orb orb2"></div>
+            <div class="orb orb3"></div>
+            <div class="orb orb4"></div>
+        </div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">H</span>
+                <span class="logo-text-secondary">M</span>
+                <div class="logo-dot"></div>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            
+            <div class="nav-right">
+                <div class="language-switcher">
+                    <button class="lang-btn active">EN</button>
+                    <button class="lang-btn">LG</button>
+                </div>
+                <button class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="header-content" data-aos="fade-up">
+                <h1>Contact <span class="gradient-text">Me</span></h1>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Contact</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="contact-hero-content" data-aos="fade-up">
+                <h2>Let's Hit the <span class="gradient-text">Road Together</span></h2>
+                <p>Whether you need a ride, have questions, or want to book my services, I'm just a message away. Webale okutuuka! (Thank you for reaching out!)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Cards -->
+    <section class="contact-cards">
+        <div class="container">
+            <div class="cards-grid">
+                <div class="contact-card glass-card" data-aos="fade-up">
+                    <div class="card-icon pulse-animation">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Call Me</h3>
+                    <p>Available 24/7 for emergencies</p>
+                    <a href="tel:+256700000000" class="contact-link">+256 700 000 000</a>
+                    <a href="tel:+256800000000" class="contact-link">+256 800 000 000</a>
+                    <button class="btn-copy" data-copy="+256700000000">
+                        <i class="fas fa-copy"></i>
+                    </button>
+                </div>
+                
+                <div class="contact-card glass-card featured" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon pulse-animation">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>Quickest response</p>
+                    <a href="https://wa.me/256700000000" class="contact-link" target="_blank">+256 700 000 000</a>
+                    <a href="https://wa.me/256700000000" class="btn-whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                </div>
+                
+                <div class="contact-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon pulse-animation">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>Send me a message anytime</p>
+                    <a href="mailto:henrie.mbogo@email.com" class="contact-link">henrie.mbogo@email.com</a>
+                    <button class="btn-copy" data-copy="henrie.mbogo@email.com">
+                        <i class="fas fa-copy"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="form-wrapper glass-card" data-aos="fade-up">
+                <div class="form-header">
+                    <h3>Send Me a Message</h3>
+                    <p>Tumma obubaka (Send a message) and I'll get back to you within 30 minutes</p>
+                </div>
+                
+                <form id="contactForm" class="modern-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" required>
+                            <label for="name">Elinya lyo (Your Name)</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Email yo</label>
+                            <span class="focus-border"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="tel" id="phone" class="phone-input" required>
+                            <label for="phone">Essimu yo (Phone Number)</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <select id="service" required>
+                                <option value="" disabled selected></option>
+                                <option value="private">Private Hire</option>
+                                <option value="cargo">Cargo Transport</option>
+                                <option value="tour">Tour Guide</option>
+                                <option value="long">Long Distance</option>
+                                <option value="wedding">Wedding Chauffeur</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <label for="service">Service Needed</label>
+                            <span class="focus-border"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" id="location" required>
+                        <label for="location">Pickup Location</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea id="message" rows="5" required></textarea>
+                        <label for="message">Obubaka bwo (Your Message)</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group date-group">
+                            <input type="date" id="date" required>
+                            <label for="date">Preferred Date</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        
+                        <div class="form-group time-group">
+                            <input type="time" id="time" required>
+                            <label for="time">Preferred Time</label>
+                            <span class="focus-border"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="urgent">
+                        <label for="urgent">This is urgent (I need service within 24 hours)</label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <span>Tumma Obubaka</span>
+                        <i class="fas fa-paper-plane"></i>
+                        <div class="btn-shine"></div>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="map-wrapper" data-aos="fade-up">
+                <div class="map-header">
+                    <h3>Find Me in Kyambogo</h3>
+                    <p>I operate from Kyambogo, serving all of Kampala and beyond</p>
+                </div>
+                
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.753622471012!2d32.611523!3d0.335887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbb6d8b3b3b3b%3A0x8b3b3b3b3b3b3b!2sKyambogo%2C%20Kampala!5e0!3m2!1sen!2sug!4v1234567890"
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                    
+                    <div class="map-pulse"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Hours -->
+    <section class="hours-section">
+        <div class="container">
+            <div class="hours-grid">
+                <div class="hours-card glass-card" data-aos="fade-right">
+                    <div class="hours-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Working Hours</h3>
+                    <ul class="hours-list">
+                        <li>
+                            <span>Monday - Saturday:</span>
+                            <span class="hours-time">6:00 AM - 8:00 PM</span>
+                        </li>
+                        <li>
+                            <span>Sunday:</span>
+                            <span class="hours-time">By Appointment</span>
+                        </li>
+                        <li>
+                            <span>Public Holidays:</span>
+                            <span class="hours-time">Limited Service</span>
+                        </li>
+                        <li class="emergency">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span>24/7 Emergency Service Available</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="response-card glass-card" data-aos="fade-left">
+                    <div class="response-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Quick Response</h3>
+                    <div class="response-timer">
+                        <div class="timer-circle">
+                            <svg>
+                                <circle class="bg" cx="60" cy="60" r="54"></circle>
+                                <circle class="progress" cx="60" cy="60" r="54"></circle>
+                            </svg>
+                            <span>30 min</span>
+                        </div>
+                        <p>Average response time</p>
+                    </div>
+                    
+                    <div class="response-channels">
+                        <div class="channel">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>5 min</span>
+                        </div>
+                        <div class="channel">
+                            <i class="fas fa-phone"></i>
+                            <span>Instant</span>
+                        </div>
+                        <div class="channel">
+                            <i class="fas fa-envelope"></i>
+                            <span>1 hour</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Quick Links -->
+    <section class="faq-quick">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Quick Answers</span>
+                <h2 class="section-title">Frequently <span class="gradient-text">Asked</span></h2>
+            </div>
+            
+            <div class="quick-grid">
+                <button class="quick-question" data-aos="zoom-in" data-question="rates">
+                    <i class="fas fa-tag"></i>
+                    <span>What are your rates?</span>
+                </button>
+                <button class="quick-question" data-aos="zoom-in" data-delay="50" data-question="areas">
+                    <i class="fas fa-map"></i>
+                    <span>Which areas do you cover?</span>
+                </button>
+                <button class="quick-question" data-aos="zoom-in" data-delay="100" data-question="booking">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>How do I book?</span>
+                </button>
+                <button class="quick-question" data-aos="zoom-in" data-delay="150" data-question="payment">
+                    <i class="fas fa-money-bill"></i>
+                    <span>What payment methods?</span>
+                </button>
+                <button class="quick-question" data-aos="zoom-in" data-delay="200" data-question="cancellation">
+                    <i class="fas fa-times-circle"></i>
+                    <span>Cancellation policy?</span>
+                </button>
+                <button class="quick-question" data-aos="zoom-in" data-delay="250" data-question="safety">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Safety measures?</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3 class="footer-logo">Henrie<span>Mbogo</span></h3>
+                    <p class="footer-tagline">Senior Driver | Kyambogo, Kampala</p>
+                    <p class="footer-motto">"Nze ndi Muganda wa Uganda!" 🇺🇬</p>
+                    
+                    <div class="footer-flags">
+                        <span class="flag black"></span>
+                        <span class="flag yellow"></span>
+                        <span class="flag red"></span>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#private">Private Hire</a></li>
+                        <li><a href="services.html#cargo">Cargo Transport</a></li>
+                        <li><a href="services.html#tours">Tour Guide</a></li>
+                        <li><a href="services.html#long">Long Distance</a></li>
+                        <li><a href="services.html#wedding">Wedding Chauffeur</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +256 700 000 000</li>
+                        <li><i class="fab fa-whatsapp"></i> +256 700 000 000</li>
+                        <li><i class="fas fa-envelope"></i> henrie.mbogo@email.com</li>
+                        <li><i class="fas fa-map-pin"></i> Kyambogo, Kampala</li>
+                    </ul>
+                    
+                    <div class="social-grid">
+                        <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Henrie Mbogo. All rights reserved. | Born 17th August 1993 | Kyambogo, Kampala | Uganda 🇺🇬</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Contact Buttons -->
+    <div class="floating-contact">
+        <button class="floating-btn main-btn">
+            <i class="fas fa-phone-alt"></i>
+        </button>
+        <div class="floating-options">
+            <a href="tel:+256700000000" class="floating-option" style="--i:1">
+                <i class="fas fa-phone"></i>
+                <span>Call</span>
+            </a>
+            <a href="https://wa.me/256700000000" class="floating-option" style="--i:2" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                <span>WhatsApp</span>
+            </a>
+            <a href="sms:+256700000000" class="floating-option" style="--i:3">
+                <i class="fas fa-sms"></i>
+                <span>SMS</span>
+            </a>
+            <a href="#contactForm" class="floating-option" style="--i:4">
+                <i class="fas fa-envelope"></i>
+                <span>Email</span>
+            </a>
+        </div>
+    </div>
+
+    <button class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
+    <script src="js/master-main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
